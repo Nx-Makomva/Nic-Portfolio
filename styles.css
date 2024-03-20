@@ -79,4 +79,38 @@ header nav .button--nav {
 }
 .container--skills-grid h2 {
   font-family: monospace;
+}
+.container--projects {
+  padding: 10px;
+}
+.container--projects .card__container-img {
+  background-color: #d0f0ee;
+  padding: 50px 10px 0 20px;
+}
+.container--projects .card__container-img img {
+  width: 100%;
+  padding: 0;
+  margin-bottom: -10px;
+}
+
+.button--card__code {
+  display: inline-flex;
+  width: 70px;
+  height: 20px;
+  margin: 20px;
+  margin-left: 0;
+}
+.button--card__code img {
+  width: 15px;
+  margin-left: 10px;
+}
+
+.button--card__preview {
+  display: inline-flex;
+  width: 90px;
+  height: 20px;
+}
+.button--card__preview img {
+  width: 15px;
+  margin-left: 10px;
 }/*# sourceMappingURL=styles.css.map */
