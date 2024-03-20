@@ -1,0 +1,52 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  margin: 10px;
+}
+
+
+
+nav {
+  display: flex;
+  justify-content: space-between;
+
+  .container__logo {
+    width: 50vw;
+    display: flex;
+    align-items: center;
+    border: 1px solid red;
+  
+    h1 {
+      font-size: 1rem;
+      margin-left: 5px;
+    }
+
+    img {
+      width: 20px;
+    }
+  }
+  #dropdown {
+    border: 1px solid black;
+  }
+
+  .nav__menu {
+    display: none;
+    width: 30vw;
+    // display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    border: 1px solid red;
+
+  }
+
+  .button--nav {
+    display: none;
+    width: 100px;
+  }
+
+}

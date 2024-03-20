@@ -1,1 +1,41 @@
-/*# sourceMappingURL=styles.css.map */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  margin: 10px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+nav .container__logo {
+  width: 50vw;
+  display: flex;
+  align-items: center;
+  border: 1px solid red;
+}
+nav .container__logo h1 {
+  font-size: 1rem;
+  margin-left: 5px;
+}
+nav .container__logo img {
+  width: 20px;
+}
+nav #dropdown {
+  border: 1px solid black;
+}
+nav .nav__menu {
+  display: none;
+  width: 30vw;
+  justify-content: space-around;
+  list-style-type: none;
+  border: 1px solid red;
+}
+nav .button--nav {
+  display: none;
+  width: 100px;
+}/*# sourceMappingURL=styles.css.map */

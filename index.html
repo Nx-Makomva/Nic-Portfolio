@@ -11,20 +11,36 @@
     <!-- Navigation section -->
     <header>
       <nav>
-        <ul>
-          <li><a href=""></a></li>
-          <li><a href=""></a></li>
-          <li><a href=""></a></li>
+        <div class="container__logo">
+          <img
+            src="/images/closing tags.png"
+            alt="picture of opening and closing tags"
+          />
+          <h1>Nic Makomva</h1>
+        </div>
+        <select id="dropdown">
+          <option value="">-----</option>
+          <option value="home">Home</option>
+          <option value="option2">About</option>
+          <option value="option3">Projects</option>
+        </select>
+        <ul class="nav__menu">
+          <li><a href="">Home</a></li>
+          <li><a href=""></a>About</li>
+          <li><a href=""></a>Projects</li>
         </ul>
+        <button class="button button--nav">Get in Touch</button>
       </nav>
     </header>
 
+    <!-- Main content -->
+    <main>
     <!-- Introduction section with name and title -->
     <section class="intro">
       <div class="container__intro">
         <h1>Hi! I'm Nic Makomva</h1>
         <h2>A Junior Software Developer based in London</h2>
-        <button class="button">Take a look at my work</button>
+        <button class="button button--intro">Take a look at my work</button>
       </div>
     </section>
 
@@ -43,44 +59,74 @@
         <div class="card">
           <h3 class="card__skill-title">Client Project 1</h3>
           <h3 class="card__project-title"></h3>
-          <p class="card__project-summary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim neque doloremque quidem ratione itaque harum quo accusantium animi aperiam molestias consequuntur eaque doloribus vel reiciendis illum, nostrum iusto aliquam eum.</p>
-          <button class="card__code-btn"></button
-          ><button class="card__preview-btn"></button>
+          <p class="card__project-summary">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim neque
+            doloremque quidem ratione itaque harum quo accusantium animi aperiam
+            molestias consequuntur eaque doloribus vel reiciendis illum, nostrum
+            iusto aliquam eum.
+          </p>
+          <button class="button button--card__code"></button
+          ><button class="button button--card__preview"></button>
         </div>
         <div class="card">
           <h3 class="card__skill-title">Client Project 2</h3>
           <h3 class="card__project-title"></h3>
-          <p class="card__project-summary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam libero vel, id nulla, neque deserunt at accusamus atque consectetur delectus ipsam eaque corporis omnis in expedita provident repellat velit animi.</p>
-          <button class="card__code-btn"></button
-          ><button class="card__preview-btn"></button>
+          <p class="card__project-summary">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
+            libero vel, id nulla, neque deserunt at accusamus atque consectetur
+            delectus ipsam eaque corporis omnis in expedita provident repellat
+            velit animi.
+          </p>
+          <button class="button button--card__code"></button
+          ><button class="button button--card__preview"></button>
         </div>
         <div class="card">
           <h3 class="card__skill-title">Client Project 3</h3>
           <h3 class="card__project-title"></h3>
-          <p class="card__project-summary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit, id voluptas! Totam doloribus aspernatur reiciendis quo a, ratione veniam, voluptate minus cupiditate incidunt mollitia, tempora officiis explicabo animi ipsum laudantium!</p>
-          <button class="card__code-btn"></button
-          ><button class="card__preview-btn"></button>
+          <p class="card__project-summary">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit,
+            id voluptas! Totam doloribus aspernatur reiciendis quo a, ratione
+            veniam, voluptate minus cupiditate incidunt mollitia, tempora
+            officiis explicabo animi ipsum laudantium!
+          </p>
+          <button class="button button--card__code"></button
+          ><button class="button button--card__preview"></button>
         </div>
         <div class="card">
           <h3 class="card__skill-title">Client Project 4</h3>
           <h3 class="card__project-title"></h3>
-          <p class="card__project-summary">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium ducimus, dolorum obcaecati libero id enim nemo ipsa magnam quo eveniet, eos, consequatur ipsam ea placeat iusto reiciendis sequi ipsum quaerat.</p>
-          <button class="card__code-btn"></button
-          ><button class="card__preview-btn"></button>
+          <p class="card__project-summary">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Accusantium ducimus, dolorum obcaecati libero id enim nemo ipsa
+            magnam quo eveniet, eos, consequatur ipsam ea placeat iusto
+            reiciendis sequi ipsum quaerat.
+          </p>
+          <button class="button button--card__code"></button
+          ><button class="button button--card__preview"></button>
         </div>
         <div class="card">
           <h3 class="card__skill-title">Client Project 5</h3>
           <h3 class="card__project-title"></h3>
-          <p class="card__project-summary">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id voluptatum, exercitationem fugit vero pariatur deleniti consequuntur provident explicabo, tenetur porro saepe omnis ad praesentium repellat voluptatibus! Repudiandae debitis voluptatem atque!</p>
-          <button class="card__code-btn"></button
+          <p class="card__project-summary">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id
+            voluptatum, exercitationem fugit vero pariatur deleniti consequuntur
+            provident explicabo, tenetur porro saepe omnis ad praesentium
+            repellat voluptatibus! Repudiandae debitis voluptatem atque!
+          </p>
+          <button class="button button--card__code"></button
           ><button class="card__preview-btn"></button>
         </div>
         <div class="card">
           <h3 class="card__skill-title">Client Project 6</h3>
           <h3 class="card__project-title"></h3>
-          <p class="card__project-summary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati perspiciatis doloremque nam sapiente laboriosam quibusdam, saepe accusantium. Modi nulla dolorum inventore omnis ut quod, ipsum animi consequuntur iusto maxime fugit.</p>
-          <button class="card__code-btn"></button
-          ><button class="card__preview-btn"></button>
+          <p class="card__project-summary">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
+            perspiciatis doloremque nam sapiente laboriosam quibusdam, saepe
+            accusantium. Modi nulla dolorum inventore omnis ut quod, ipsum animi
+            consequuntur iusto maxime fugit.
+          </p>
+          <button class="button button--card__code"></button
+          ><button class="button button--card__preview"></button>
         </div>
       </div>
     </section>
@@ -98,7 +144,9 @@
         </p>
       </div>
     </section>
+    </main>
 
+    <!-- Footer section with contact & 3 logos, all links to social sites e.g. github, linkedIn plus my CV -->
     <footer>
       <div class="container__contact">
         <img src="" alt="github logo" class="contact__github" /><img
@@ -109,6 +157,6 @@
         <a href="mailto:nicholasstm@gmail.com">Nicholasstm@gmail.com</a>
       </div>
     </footer>
-    <!-- Footer section with contact & 3 logos, all links to social sites e.g. github, linkedIn plus my CV -->
+
   </body>
 </html>
