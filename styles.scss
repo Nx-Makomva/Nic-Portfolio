@@ -5,48 +5,88 @@
   box-sizing: border-box;
 }
 
+section {
+  margin: 80px 30px;
+}
+
+// Header and Navigation styles
 header {
   margin: 10px;
-}
 
-
-
-nav {
-  display: flex;
-  justify-content: space-between;
-
-  .container__logo {
-    width: 50vw;
+  nav {
     display: flex;
-    align-items: center;
-    border: 1px solid red;
-  
-    h1 {
-      font-size: 1rem;
-      margin-left: 5px;
+    justify-content: space-between;
+
+    .container__logo {
+      width: 50vw;
+      display: flex;
+      align-items: center;
+      border: 1px solid red;
+    
+      h1 {
+        font-size: 1rem;
+        margin-left: 5px;
+      }
+
+      img {
+        width: 20px;
+      }
+    }
+    #dropdown {
+      border: 1px solid black;
     }
 
-    img {
-      width: 20px;
+    .nav__menu {
+      display: none;
+      width: 30%;
+      // display: flex;
+      justify-content: space-around;
+      list-style-type: none;
+      border: 1px solid red;
+
+    }
+
+    .button--nav {
+      display: none;
+      width: 100px;
     }
   }
-  #dropdown {
-    border: 1px solid black;
-  }
-
-  .nav__menu {
-    display: none;
-    width: 30vw;
-    // display: flex;
-    justify-content: space-around;
-    list-style-type: none;
-    border: 1px solid red;
-
-  }
-
-  .button--nav {
-    display: none;
-    width: 100px;
-  }
-
 }
+
+
+.container {
+  border: 2px solid greenyellow;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+// Intro Styles
+    &--intro {
+      text-align: center;
+    
+      h1 {
+        margin: 10px;
+        padding: 10px;
+      }
+  
+      h2 {
+        font-size: 50px;
+      }
+
+      .button--intro {
+        margin: 100px;
+        width: 80%;
+        height: 50px;
+        border-radius: 5px;
+        box-shadow: 1px 1px;
+      
+        img {
+          margin: 0 8px;
+          width: 10px;
+        }
+      }
+    }
+}
+
+
+ 

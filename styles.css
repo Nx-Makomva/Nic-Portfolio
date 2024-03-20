@@ -4,38 +4,69 @@
   box-sizing: border-box;
 }
 
+section {
+  margin: 80px 30px;
+}
+
 header {
   margin: 10px;
 }
-
-nav {
+header nav {
   display: flex;
   justify-content: space-between;
 }
-nav .container__logo {
+header nav .container__logo {
   width: 50vw;
   display: flex;
   align-items: center;
   border: 1px solid red;
 }
-nav .container__logo h1 {
+header nav .container__logo h1 {
   font-size: 1rem;
   margin-left: 5px;
 }
-nav .container__logo img {
+header nav .container__logo img {
   width: 20px;
 }
-nav #dropdown {
+header nav #dropdown {
   border: 1px solid black;
 }
-nav .nav__menu {
+header nav .nav__menu {
   display: none;
-  width: 30vw;
+  width: 30%;
   justify-content: space-around;
   list-style-type: none;
   border: 1px solid red;
 }
-nav .button--nav {
+header nav .button--nav {
   display: none;
   width: 100px;
+}
+
+.container {
+  border: 2px solid greenyellow;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container--intro {
+  text-align: center;
+}
+.container--intro h1 {
+  margin: 10px;
+  padding: 10px;
+}
+.container--intro h2 {
+  font-size: 50px;
+}
+.container--intro .button--intro {
+  margin: 100px;
+  width: 80%;
+  height: 50px;
+  border-radius: 5px;
+  box-shadow: 1px 1px;
+}
+.container--intro .button--intro img {
+  margin: 0 8px;
+  width: 10px;
 }/*# sourceMappingURL=styles.css.map */
