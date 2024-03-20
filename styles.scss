@@ -84,9 +84,24 @@ header {
           margin: 0 8px;
           width: 10px;
         }
-      }
+      }    
     }
+
+// Technical Skills Styles
+  &--skills-grid {
+    margin: 20px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 50px 30px;
+
+    h2 {
+      font-family: monospace; // Placeholder - change font
+    }
+  }
 }
+
+
 
 
  

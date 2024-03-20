@@ -69,4 +69,14 @@ header nav .button--nav {
 .container--intro .button--intro img {
   margin: 0 8px;
   width: 10px;
+}
+.container--skills-grid {
+  margin: 20px 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 50px 30px;
+}
+.container--skills-grid h2 {
+  font-family: monospace;
 }/*# sourceMappingURL=styles.css.map */
