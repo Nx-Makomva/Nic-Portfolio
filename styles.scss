@@ -1,4 +1,6 @@
 
+$color-primary: darken(#E3F6F5, 5%);
+
 * {
   margin: 0;
   padding: 0;
@@ -100,25 +102,6 @@ header {
     }
   }
 
-  // Projects Container Styles
-  &--projects {
-    padding: 10px;
-
-      .card__container-img {
-        background-color: darken(#E3F6F5, 5%);
-        padding: 50px 10px 0 20px;
-      
-        img {
-          width: 100%;
-          padding: 0;
-          margin-bottom: -10px;
-          
-          
-        }
-      }
-     
-  }
-
 }
 
 
@@ -129,8 +112,9 @@ header {
   display: inline-flex;
   width: 70px;
   height: 20px;
-  margin: 20px;
+  margin: 30px;
   margin-left: 0;
+  // TODO: Remember to remover background from buttons!
 
     img {
       width: 15px;
@@ -142,6 +126,8 @@ header {
   display: inline-flex;
   width: 90px;
   height: 20px;
+  // TODO: Remember to remover background from buttons!
+
 
   img {
     width: 15px;
@@ -149,3 +135,30 @@ header {
   }
 }
  
+  // Projects Container Styles
+  .container--projects {
+    padding: 10px;
+
+      .card__container-img {
+        background-color: $color-primary;
+        padding: 50px 10px 0 20px;
+        margin-top: 30px;
+      
+        img {
+          width: 100%;
+          padding: 0;
+          margin-bottom: -10px;
+        }
+      }
+     
+      .card__skill-title {
+        font-size: 12px;
+        margin: 30px 0 5px;
+        color: $color-primary;
+        font-weight: bold;
+      }
+
+      .card__project-title {
+        margin-bottom: 20px;
+      }
+  }

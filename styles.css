@@ -80,24 +80,12 @@ header nav .button--nav {
 .container--skills-grid h2 {
   font-family: monospace;
 }
-.container--projects {
-  padding: 10px;
-}
-.container--projects .card__container-img {
-  background-color: #d0f0ee;
-  padding: 50px 10px 0 20px;
-}
-.container--projects .card__container-img img {
-  width: 100%;
-  padding: 0;
-  margin-bottom: -10px;
-}
 
 .button--card__code {
   display: inline-flex;
   width: 70px;
   height: 20px;
-  margin: 20px;
+  margin: 30px;
   margin-left: 0;
 }
 .button--card__code img {
@@ -113,4 +101,27 @@ header nav .button--nav {
 .button--card__preview img {
   width: 15px;
   margin-left: 10px;
+}
+
+.container--projects {
+  padding: 10px;
+}
+.container--projects .card__container-img {
+  background-color: #d0f0ee;
+  padding: 50px 10px 0 20px;
+  margin-top: 30px;
+}
+.container--projects .card__container-img img {
+  width: 100%;
+  padding: 0;
+  margin-bottom: -10px;
+}
+.container--projects .card__skill-title {
+  font-size: 12px;
+  margin: 30px 0 5px;
+  color: #d0f0ee;
+  font-weight: bold;
+}
+.container--projects .card__project-title {
+  margin-bottom: 20px;
 }/*# sourceMappingURL=styles.css.map */
