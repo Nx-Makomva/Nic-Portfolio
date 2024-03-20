@@ -124,4 +124,13 @@ header nav .button--nav {
 }
 .container--projects .card__project-title {
   margin-bottom: 20px;
+}
+
+.container--about-me {
+  padding: 20px;
+}
+.container--about-me .about-me__img {
+  width: 100%;
+  margin: 20px;
+  border-radius: 5px;
 }/*# sourceMappingURL=styles.css.map */
