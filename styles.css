@@ -29,7 +29,7 @@ header nav .container__logo img {
   width: 20px;
 }
 header nav #dropdown {
-  border: 1px solid black;
+  border: 1px solid rgb(40, 33, 33);
 }
 header nav .nav__menu {
   display: none;
@@ -79,6 +79,24 @@ header nav .button--nav {
 }
 .container--skills-grid h2 {
   font-family: monospace;
+}
+.container--contact {
+  border: 1px solid red;
+  background-color: #282643;
+  padding: 20px;
+}
+.container--contact a {
+  text-decoration: none;
+  color: #fff;
+}
+.container--contact-logos {
+  border: 2px solid blue;
+  flex-direction: row;
+  padding: 10px;
+  margin: 10px;
+}
+.container--contact-logos img {
+  margin-right: 10px;
 }
 
 .button--card__code {
@@ -133,4 +151,8 @@ header nav .button--nav {
   width: 100%;
   margin: 20px;
   border-radius: 5px;
+}
+
+footer {
+  border: 1px solid red;
 }/*# sourceMappingURL=styles.css.map */
