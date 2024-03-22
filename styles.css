@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Quicksand:wght@300..700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Anatolian+Hieroglyphs&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sono:wght@200..800&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -25,7 +25,7 @@ header nav .container__logo {
 header nav .container__logo h1 {
   font-size: 1.25rem;
   margin-left: 10px;
-  font-family: "Noto Sans Anatolian Hieroglyphs";
+  font-family: "Quicksand";
 }
 header nav .container__logo img {
   width: 30px;
@@ -51,24 +51,64 @@ header nav .button--nav {
   flex-direction: column;
   align-items: center;
 }
+.container h2 {
+  font-family: "Quicksand";
+  font-size: 2rem;
+}
 .container--intro {
   text-align: left;
   background-color: #F7FAFA;
 }
+.container--skills-grid {
+  margin: 20px 0;
+  display: grid;
+  grid-auto-flow: row dense;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 50px 30px;
+}
+.container--skills-grid h2 {
+  font-family: monospace;
+}
+.container--projects {
+  padding: 10px;
+}
+.container--about-me {
+  padding: 20px;
+}
+.container--contact {
+  border: 1px solid red;
+  background-color: #282643;
+  padding: 20px;
+}
+.container--contact a {
+  text-decoration: none;
+  color: #fff;
+}
+.container--contact-logos {
+  border: 2px solid blue;
+  flex-direction: row;
+  padding: 10px;
+  margin: 10px;
+}
+.container--contact-logos img {
+  margin-right: 10px;
+}
+
 .container--intro h1 {
   padding-left: 15px;
   margin: 20px 0;
   text-align: left;
   color: #93A2B5;
   font-size: 1.125rem;
-  font-family: "Quicksand";
+  font-family: Arial;
   font-weight: 400;
 }
 .container--intro h2 {
   height: 10%;
   padding-left: 15px;
   font-size: 3.6rem;
-  font-family: "Noto Sans Anatolian Hieroglyphs";
+  font-family: "Quicksand";
 }
 .container--intro h2 .intro__line {
   position: absolute;
@@ -95,98 +135,87 @@ header nav .button--nav {
   border-radius: 5px;
   box-shadow: 2px 2px;
   background-color: #BAE8E8;
-  font-family: "Quicksand";
+  font-family: Arial;
   font-size: 1.125rem;
-  font-weight: 700;
+  font-weight: 400;
 }
 .container--intro .button--intro img {
   margin: 0 5px;
   width: 15px;
 }
-.container--skills-grid {
-  margin: 20px 0;
-  display: grid;
-  grid-auto-flow: row dense;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  gap: 50px 30px;
-}
-.container--skills-grid h2 {
-  font-family: monospace;
-}
-.container--contact {
-  border: 1px solid red;
-  background-color: #282643;
-  padding: 20px;
-}
-.container--contact a {
-  text-decoration: none;
-  color: #fff;
-}
-.container--contact-logos {
-  border: 2px solid blue;
-  flex-direction: row;
-  padding: 10px;
-  margin: 10px;
-}
-.container--contact-logos img {
-  margin-right: 10px;
-}
 
-.button--card__code {
-  display: inline-flex;
-  width: 70px;
-  height: 20px;
-  margin: 30px;
-  margin-left: 0;
-}
-.button--card__code img {
-  width: 15px;
-  margin-left: 10px;
-}
-
-.button--card__preview {
-  display: inline-flex;
-  width: 90px;
-  height: 20px;
-}
-.button--card__preview img {
-  width: 15px;
-  margin-left: 10px;
-}
-
-.container--projects {
-  padding: 10px;
-}
-.container--projects .card__container-img {
+.projects__img {
   background-color: #9bdedb;
   padding: 50px 10px 0 20px;
   margin-top: 30px;
 }
-.container--projects .card__container-img img {
+.projects__img img {
   width: 100%;
   padding: 0;
   margin-bottom: -10px;
 }
-.container--projects .card__skill-title {
+
+.projects__skill-title {
+  font-family: "Quicksand";
   font-size: 0.875rem;
   margin: 30px 0 5px;
   color: #9bdedb;
   font-weight: bold;
 }
-.container--projects .card__project-title {
+
+.projects__work-title {
   margin-bottom: 20px;
+  font-family: "Quicksand";
+  font-size: 1.8rem;
 }
 
-.container--about-me {
-  padding: 20px;
+.projects__summary {
+  font-family: Arial;
+  font-size: 1rem;
+  color: #93A2B5;
 }
-.container--about-me .about-me__img {
+
+.projects__btn-code {
+  display: inline-flex;
+  width: 70px;
+  height: 20px;
+  margin: 30px 10px;
+  margin-left: 0;
+  background-color: white;
+  border: none;
+}
+.projects__btn-code img {
+  width: 15px;
+  margin-left: 10px;
+}
+
+.projects__btn-preview {
+  display: inline-flex;
+  width: 90px;
+  height: 20px;
+  background-color: white;
+  border: none;
+}
+.projects__btn-preview img {
+  width: 15px;
+  margin-left: 10px;
+}
+
+.about-me__img {
   width: 90%;
   margin: 20px;
   border-radius: 5px;
 }
 
-footer {
-  border: 1px solid red;
+.about-me__summary {
+  font-family: Arial;
+  font-size: 1rem;
+  color: #93A2B5;
+}
+
+.about-me__skills-list {
+  font-family: Arial;
+  font-size: 1rem;
+  color: #93A2B5;
+  list-style-type: lower-alpha;
 }/*# sourceMappingURL=styles.css.map */
