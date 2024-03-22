@@ -1,7 +1,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Quicksand:wght@300..700&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Anatolian+Hieroglyphs&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sono:wght@200..800&display=swap');
+
 
 
 // Colour Schemes
@@ -9,21 +10,24 @@ $color-primary: darken(#A3E1DE, 2%);
 $color-secondary: #93A2B5;
 $color-tertiary: #F7FAFA;
 $color-button: #BAE8E8;
+$color-button-projects: white;
 $color-footer: #282643;
 $color-footer-text: #fff;
 $color-intro-greeting: #93A2B5;
+
 
 
 // Font Styling
 $font-size-header: 1.25rem;
 $font-size-intro-greeting: 1.125rem;
 $font-size-intro-heading: 3.6rem;
-$font-size-subheadings: 1.25rem;
+$font-size-subheadings: 2rem;
 $font-size-button-large: 1.125rem;
 $font-size-button-small: 0.75rem;
-$font-size-project-title: 1.125rem;
+$font-size-project-title: 1.8rem;
 $font-size-project-skill-title: 0.875rem;
 $font-size-paragraphs: 1rem;
 
-$font-family-titles: 'Noto Sans Anatolian Hieroglyphs';
-$font-family-paragraphs: 'Quicksand';
+$font-family-titles: 'Quicksand';
+$font-family-paragraphs: Arial;
+$font-family-subheadings: 'Quicksand'

@@ -1,4 +1,4 @@
-@use 'variables.scss' as *;
+@use "variables.scss" as *;
 
 * {
   margin: 0;
@@ -9,7 +9,7 @@
 section {
   margin: 80px 30px;
 }
-///////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////
 
 // Header and Navigation styles
 header {
@@ -55,7 +55,7 @@ header {
   }
 }
 
-/////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////
 
 //////// Containers for ALL sections styling //////////////
 .container {
@@ -64,69 +64,15 @@ header {
   flex-direction: column;
   align-items: center;
 
+  h2 {
+    font-family: $font-family-titles;
+    font-size: $font-size-subheadings;
+  }
+
   /////////// Intro Container /////////////////////
   &--intro {
     text-align: left;
     background-color: $color-tertiary;
-      
-
-      h1 {
-        padding-left: 15px;
-        margin: 20px 0;
-        text-align: left;
-        color: $color-secondary;
-        font-size: $font-size-intro-greeting;
-        font-family: $font-family-paragraphs;
-        font-weight: 400;
-      }
-
-      h2 {
-        height: 10%;
-        padding-left: 15px;
-        font-size: $font-size-intro-heading;
-        font-family: $font-family-titles;
-
-          
-
-          .intro__line {
-            position: absolute;
-            right: 120px;
-            top: 380px;
-            z-index: 0;
-            margin: -75px 0;
-            height: 50px;
-            width: 55%;
-          }
-
-          .intro__line-software {
-            position: absolute;
-            right: 100px;
-            top: 460px;
-            margin: -85px 0;
-            height: 60px;
-            width: 60%;
-          }
-      }
-
-    
-
-    .button--intro {
-      margin: 100px;
-      padding: 15px;
-      width: 90%;
-      height: 70px;
-      border-radius: 5px;
-      box-shadow: 2px 2px;
-      background-color: $color-button;
-      font-family: $font-family-paragraphs;
-      font-size: $font-size-button-large;
-      font-weight: 700;
-
-      img {
-        margin: 0 5px;
-        width: 15px;
-      }
-    }
   }
 
   /////////// Technical Skills Container ////////////////
@@ -142,7 +88,18 @@ header {
       font-family: monospace; // Placeholder - change font
     }
   }
-/////////// Footer (Contact) Container ////////////////
+
+  /////////// Projects Container ////////////////
+  &--projects {
+    padding: 10px;
+  }
+
+  /////////// About Me Container ////////////////
+  &--about-me {
+    padding: 20px;
+  }
+
+  /////////// Footer (Contact) Container ////////////////
   &--contact {
     border: 1px solid red;
     background-color: $color-footer;
@@ -152,102 +109,166 @@ header {
       text-decoration: none;
       color: $color-footer-text;
     }
-
   }
 
-/// Don't nest 'contact-logos' in 'contact' because it will inherit the 
-/// 'flex-direction: row' property from its parent
-    &--contact-logos {
-      border: 2px solid blue;
-      flex-direction: row;
-      padding: 10px;
-      margin: 10px;
-
-      img {
-        margin-right: 10px;
-      }
-    }
-  }
-
-
-///////////// INTRO LAYOUT ///////////////
-
-//////// TECHNICAL SKILLS LAYOUT ////////
-
-//////// PROJECTS (CARDS) LAYOUT ////////
-
-////////// ABOUT ME LAYOUT //////////////
-
-//////////// FOOTER LAYOUT /////////////
-
-// Cards (Projects) Styling
-
-.button--card__code {
-  display: inline-flex;
-  width: 70px;
-  height: 20px;
-  margin: 30px;
-  margin-left: 0;
-  // TODO: Remember to remover background from buttons!
-
-  img {
-    width: 15px;
-    margin-left: 10px;
-  }
-}
-
-.button--card__preview {
-  display: inline-flex;
-  width: 90px;
-  height: 20px;
-  // TODO: Remember to remover background from buttons!
-
-  img {
-    width: 15px;
-    margin-left: 10px;
-  }
-}
-
-// Projects Container Styles
-.container--projects {
-  padding: 10px;
-
-  .card__container-img {
-    background-color: $color-primary;
-    padding: 50px 10px 0 20px;
-    margin-top: 30px;
+  /// Don't nest 'contact-logos' in 'contact' because it will inherit the
+  /// 'flex-direction: row' property from its parent
+  &--contact-logos {
+    border: 2px solid blue;
+    flex-direction: row;
+    padding: 10px;
+    margin: 10px;
 
     img {
-      width: 100%;
-      padding: 0;
-      margin-bottom: -10px;
+      margin-right: 10px;
+    }
+  }
+}
+
+///////////// INTRO LAYOUT ///////////////
+.container--intro {
+  h1 {
+    padding-left: 15px;
+    margin: 20px 0;
+    text-align: left;
+    color: $color-secondary;
+    font-size: $font-size-intro-greeting;
+    font-family: $font-family-paragraphs;
+    font-weight: 400;
+  }
+
+  h2 {
+    height: 10%;
+    padding-left: 15px;
+    font-size: $font-size-intro-heading;
+    font-family: $font-family-titles;
+
+    .intro__line {
+      position: absolute;
+      right: 120px;
+      top: 380px;
+      z-index: 0;
+      margin: -75px 0;
+      height: 50px;
+      width: 55%;
+    }
+
+    .intro__line-software {
+      position: absolute;
+      right: 100px;
+      top: 460px;
+      margin: -85px 0;
+      height: 60px;
+      width: 60%;
     }
   }
 
-  .card__skill-title {
-    font-size: $font-size-project-skill-title;
-    margin: 30px 0 5px;
-    color: $color-primary;
-    font-weight: bold;
-  }
-
-  .card__project-title {
-    margin-bottom: 20px;
-  }
-}
-
-// Last thing to style
-
-.container--about-me {
-  padding: 20px;
-
-  .about-me__img {
+  .button--intro {
+    margin: 100px;
+    padding: 15px;
     width: 90%;
-    margin: 20px;
+    height: 70px;
     border-radius: 5px;
+    box-shadow: 2px 2px;
+    background-color: $color-button;
+    font-family: $font-family-paragraphs;
+    font-size: $font-size-button-large;
+    font-weight: 400;
+
+    img {
+      margin: 0 5px;
+      width: 15px;
+    }
   }
 }
+//////// TECHNICAL SKILLS LAYOUT ////////
 
-footer {
-  border: 1px solid red;
+//////// PROJECTS LAYOUT //////////////////
+  .projects__img {
+      background-color: $color-primary;
+      padding: 50px 10px 0 20px;
+      margin-top: 30px;
+
+      img {
+        width: 100%;
+        padding: 0;
+        margin-bottom: -10px;
+      }
+    }
+
+    .projects__skill-title {
+      font-family: $font-family-titles;
+      font-size: $font-size-project-skill-title;
+      margin: 30px 0 5px;
+      color: $color-primary;
+      font-weight: bold;
+    }
+
+    .projects__work-title {
+      margin-bottom: 20px;
+      font-family: $font-family-titles;
+      font-size: $font-size-project-title;
+    }
+
+    .projects__summary {
+      font-family: Arial;
+      font-size: $font-size-paragraphs;
+      color: $color-secondary;
+    }
+
+    .projects__btn-code {
+      display: inline-flex; 
+      width: 70px;
+      height: 20px;
+      margin: 30px 10px;
+      margin-left: 0;
+      background-color: $color-button-projects;
+      border: none;
+    
+
+      // TODO: Remember to remove grey background from buttons!
+    
+      img {
+        width: 15px;
+        margin-left: 10px;
+      }
+    }
+    
+    .projects__btn-preview {
+      display: inline-flex;
+      width: 90px;
+      height: 20px;
+      background-color: $color-button-projects;
+      border: none;
+      // TODO: Remember to remove grey background from buttons!
+    
+      img {
+        width: 15px;
+        margin-left: 10px;
+      }
+    }
+  
+
+////////// ABOUT ME LAYOUT //////////////
+.about-me__img {
+  width: 90%;
+  margin: 20px;
+  border-radius: 5px;
 }
+
+.about-me__summary {
+  font-family: $font-family-paragraphs;
+  font-size: $font-size-paragraphs;
+  color: $color-secondary;
+}
+
+.about-me__skills-list {
+  font-family: $font-family-paragraphs;
+  font-size: $font-size-paragraphs;
+  color: $color-secondary;
+  list-style-type: lower-alpha;
+}
+//////////// FOOTER LAYOUT /////////////
+
+
+
