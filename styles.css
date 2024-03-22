@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Quicksand:wght@300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Anatolian+Hieroglyphs&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -19,14 +21,14 @@ header nav .container__logo {
   width: 50vw;
   display: flex;
   align-items: center;
-  border: 1px solid red;
 }
 header nav .container__logo h1 {
-  font-size: 1rem;
-  margin-left: 5px;
+  font-size: 1.25rem;
+  margin-left: 10px;
+  font-family: "Noto Sans Anatolian Hieroglyphs";
 }
 header nav .container__logo img {
-  width: 20px;
+  width: 30px;
 }
 header nav #dropdown {
   border: 1px solid rgb(40, 33, 33);
@@ -50,29 +52,61 @@ header nav .button--nav {
   align-items: center;
 }
 .container--intro {
-  text-align: center;
+  text-align: left;
+  background-color: #F7FAFA;
 }
 .container--intro h1 {
-  margin: 10px;
-  padding: 10px;
+  padding-left: 15px;
+  margin: 20px 0;
+  text-align: left;
+  color: #93A2B5;
+  font-size: 1.125rem;
+  font-family: "Quicksand";
+  font-weight: 400;
 }
 .container--intro h2 {
-  font-size: 50px;
+  height: 10%;
+  padding-left: 15px;
+  font-size: 3.6rem;
+  font-family: "Noto Sans Anatolian Hieroglyphs";
+}
+.container--intro h2 .intro__line {
+  position: absolute;
+  right: 120px;
+  top: 380px;
+  z-index: 0;
+  margin: -75px 0;
+  height: 50px;
+  width: 55%;
+}
+.container--intro h2 .intro__line-software {
+  position: absolute;
+  right: 100px;
+  top: 460px;
+  margin: -85px 0;
+  height: 60px;
+  width: 60%;
 }
 .container--intro .button--intro {
   margin: 100px;
-  width: 80%;
-  height: 50px;
+  padding: 15px;
+  width: 90%;
+  height: 70px;
   border-radius: 5px;
-  box-shadow: 1px 1px;
+  box-shadow: 2px 2px;
+  background-color: #BAE8E8;
+  font-family: "Quicksand";
+  font-size: 1.125rem;
+  font-weight: 700;
 }
 .container--intro .button--intro img {
-  margin: 0 8px;
-  width: 10px;
+  margin: 0 5px;
+  width: 15px;
 }
 .container--skills-grid {
   margin: 20px 0;
   display: grid;
+  grid-auto-flow: row dense;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   gap: 50px 30px;
@@ -125,7 +159,7 @@ header nav .button--nav {
   padding: 10px;
 }
 .container--projects .card__container-img {
-  background-color: #d0f0ee;
+  background-color: #9bdedb;
   padding: 50px 10px 0 20px;
   margin-top: 30px;
 }
@@ -135,9 +169,9 @@ header nav .button--nav {
   margin-bottom: -10px;
 }
 .container--projects .card__skill-title {
-  font-size: 12px;
+  font-size: 0.875rem;
   margin: 30px 0 5px;
-  color: #d0f0ee;
+  color: #9bdedb;
   font-weight: bold;
 }
 .container--projects .card__project-title {
@@ -148,7 +182,7 @@ header nav .button--nav {
   padding: 20px;
 }
 .container--about-me .about-me__img {
-  width: 100%;
+  width: 90%;
   margin: 20px;
   border-radius: 5px;
 }

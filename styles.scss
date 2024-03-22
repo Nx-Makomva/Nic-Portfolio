@@ -1,6 +1,4 @@
-$color-primary: darken(#e3f6f5, 5%);
-$color-footer: #282643;
-$color-footer-text: #fff;
+@use 'variables.scss' as *;
 
 * {
   margin: 0;
@@ -25,15 +23,15 @@ header {
       width: 50vw;
       display: flex;
       align-items: center;
-      border: 1px solid red;
 
       h1 {
-        font-size: 1rem;
-        margin-left: 5px;
+        font-size: $font-size-header;
+        margin-left: 10px;
+        font-family: $font-family-titles;
       }
 
       img {
-        width: 20px;
+        width: 30px;
       }
     }
     #dropdown {
@@ -68,27 +66,65 @@ header {
 
   /////////// Intro Container /////////////////////
   &--intro {
-    text-align: center;
+    text-align: left;
+    background-color: $color-tertiary;
+      
 
-    h1 {
-      margin: 10px;
-      padding: 10px;
-    }
+      h1 {
+        padding-left: 15px;
+        margin: 20px 0;
+        text-align: left;
+        color: $color-secondary;
+        font-size: $font-size-intro-greeting;
+        font-family: $font-family-paragraphs;
+        font-weight: 400;
+      }
 
-    h2 {
-      font-size: 50px;
-    }
+      h2 {
+        height: 10%;
+        padding-left: 15px;
+        font-size: $font-size-intro-heading;
+        font-family: $font-family-titles;
+
+          
+
+          .intro__line {
+            position: absolute;
+            right: 120px;
+            top: 380px;
+            z-index: 0;
+            margin: -75px 0;
+            height: 50px;
+            width: 55%;
+          }
+
+          .intro__line-software {
+            position: absolute;
+            right: 100px;
+            top: 460px;
+            margin: -85px 0;
+            height: 60px;
+            width: 60%;
+          }
+      }
+
+    
 
     .button--intro {
       margin: 100px;
-      width: 80%;
-      height: 50px;
+      padding: 15px;
+      width: 90%;
+      height: 70px;
       border-radius: 5px;
-      box-shadow: 1px 1px;
+      box-shadow: 2px 2px;
+      background-color: $color-button;
+      font-family: $font-family-paragraphs;
+      font-size: $font-size-button-large;
+      font-weight: 700;
 
       img {
-        margin: 0 8px;
-        width: 10px;
+        margin: 0 5px;
+        width: 15px;
       }
     }
   }
@@ -97,6 +133,7 @@ header {
   &--skills-grid {
     margin: 20px 0;
     display: grid;
+    grid-auto-flow: row dense;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     gap: 50px 30px;
@@ -188,7 +225,7 @@ header {
   }
 
   .card__skill-title {
-    font-size: 12px;
+    font-size: $font-size-project-skill-title;
     margin: 30px 0 5px;
     color: $color-primary;
     font-weight: bold;
@@ -205,7 +242,7 @@ header {
   padding: 20px;
 
   .about-me__img {
-    width: 100%;
+    width: 90%;
     margin: 20px;
     border-radius: 5px;
   }
