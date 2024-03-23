@@ -1,0 +1,49 @@
+
+
+// Set background color and gradient
+body {
+  background: linear-gradient(to bottom right, #bae8e8, #0ba79f);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+// Container styles
+.coming-soon {
+  max-width: 600px;
+  padding: 40px;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+
+    // Heading styles
+h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+// Paragraph styles
+p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 40px;
+}
+
+}
+
+a {
+  text-decoration: none;
+  color: white;
+
+    &:hover {
+      text-decoration: underline;
+      color: rgba(255, 166, 0, 0.737);
+    }
+}

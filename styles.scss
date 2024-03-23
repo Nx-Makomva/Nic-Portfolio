@@ -1,4 +1,5 @@
 @use "variables.scss" as *;
+@use "media-queries.scss" as *;
 
 * {
   margin: 0;
@@ -8,6 +9,7 @@
 
 a {
   text-decoration: none;
+  color: $color-titles;
 }
 
 section {
@@ -39,7 +41,11 @@ header {
       }
     }
     #dropdown {
-      border: 1px solid rgb(40, 33, 33);
+      position: fixed;
+      right: 20px;
+      width: 20px;
+      opacity: 0.8;
+      border: none;
     }
 
     .nav__menu {
@@ -51,8 +57,8 @@ header {
       border: 1px solid red;
     }
 
-    // TODO: UNIVERSAL BUTTON STYLES NEED TO BE ADDED
-    .button--nav {
+    // TODO: Unhide during media queries
+    .nav__get-in-touch {
       display: none;
       width: 100px;
     }
@@ -114,7 +120,6 @@ header {
     margin: 0;
 
     a {
-      text-decoration: none;
       color: $color-footer-text;
     }
   }
@@ -144,14 +149,14 @@ header {
     font-family: $font-family-paragraphs;
     font-weight: 400;
 
-      a {
-        color: $color-secondary;
+    a {
+      color: $color-secondary;
 
-        &:hover {
-          text-decoration: underline;
-          color: orange;
-        }
+      &:hover {
+        text-decoration: underline;
+        color: orange;
       }
+    }
   }
 
   h2 {
@@ -179,27 +184,37 @@ header {
     }
   }
 
-  .button--intro {
+  .intro__projects-link {
     margin: 60px;
-    padding: 20px;
+    padding: 25px 20px;
     width: 280px;
     height: 70px;
     border-radius: 5px;
-    box-shadow: 2px 2px;
-    background-color: $color-button;
+    box-shadow: 3px 3px 2px;
+    background-color: $color-intro-link;
     font-family: $font-family-paragraphs;
-    font-size: $font-size-button-large;
-    font-weight: 500;
+    font-size: $font-size-link-large;
+    font-weight: 450;
     letter-spacing: -1px;
     word-spacing: -4px;
 
-      a {
-        color: $color-titles;
-      }
+    &:hover {
+      box-shadow: 2px 2px;
+      cursor: pointer;
+    }
 
-      img {
-        margin-left: 8px;
-      }
+    &:active {
+      box-shadow: 1px 1px;
+      width: 240px;
+      height: 50px;
+      font-size: 99%;
+      padding-top: 16px;
+      padding-left: 16px;
+    }
+
+    img {
+      margin-left: 8px;
+    }
   }
 }
 
@@ -241,17 +256,27 @@ header {
     color: $color-secondary;
   }
 
-  .projects__btn-code {
+  .projects__code-link {
     display: inline-flex;
     width: 70px;
     height: 20px;
     margin: 30px 10px;
     margin-left: 0;
-    background-color: $color-button-projects;
+    background-color: $color-projects-links;
     border: none;
-    font-size: $font-size-button-small;
+    font-size: $font-size-link-small;
     font-family: $font-family-paragraphs;
     font-weight: 450;
+
+      &:hover {
+        background-color: lighten($color-secondary, 0.5%);
+        border-radius: 2px;
+        margin-left: 1px;
+      }
+
+      &:visited {
+        color: $color-link-visited;
+      }
 
     img {
       width: 19px;
@@ -259,15 +284,25 @@ header {
     }
   }
 
-  .projects__btn-preview {
+  .projects__preview-link {
     display: inline-flex;
     width: 90px;
     height: 20px;
-    background-color: $color-button-projects;
+    background-color: $color-projects-links;
     border: none;
-    font-size: $font-size-button-small;
+    font-size: $font-size-link-small;
     font-family: $font-family-paragraphs;
     font-weight: 450;
+    
+    &:hover {
+      background-color: lighten($color-secondary, 0.5%);
+      border-radius: 2px;
+      margin-left: 1px;
+    }  
+
+    &:visited {
+      color: $color-link-visited;
+    }
 
     img {
       width: 19px;
@@ -297,7 +332,6 @@ header {
 }
 //////////// FOOTER LAYOUT /////////////
 .container--contact {
-
   .contact__logo {
     img {
       margin: 0 5px;
@@ -311,7 +345,7 @@ header {
 
     &:hover {
       text-decoration: underline;
-      color: rgb(203, 202, 202);
+      color: lighten($color-secondary, 0.5%);
     }
   }
 }
