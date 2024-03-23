@@ -1,33 +1,28 @@
+// Imported Quicksand, Montserrat, DM Sans, Hind Guntur and Sono
 
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Quicksand:wght@300..700&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Sono:wght@200..800&display=swap');
-
-
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Hind+Guntur:wght@300;400;500;600;700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&family=Sono:wght@200..800&display=swap");
 
 // Colour Schemes
-$color-primary: darken(#A3E1DE, 2%);
-$color-secondary: #93A2B5;
-$color-tertiary: #F7FAFA;
-$color-button: #BAE8E8;
+$color-primary: darken(#e3f6f5, 2%);
+$color-secondary: #93a2b5;
+$color-tertiary: #f7fafa;
+$color-button: #bae8e8;
 $color-button-projects: white;
 $color-footer: #282643;
 $color-footer-text: #fff;
-$color-intro-greeting: #93A2B5;
-
-
+$color-titles: black;
 
 // Font Styling
-$font-size-header: 1.25rem;
+$font-size-header: 1rem;
 $font-size-intro-greeting: 1.125rem;
 $font-size-intro-heading: 3.6rem;
 $font-size-subheadings: 2rem;
 $font-size-button-large: 1.125rem;
-$font-size-button-small: 0.75rem;
+$font-size-button-small: 0.9rem;
 $font-size-project-title: 1.8rem;
 $font-size-project-skill-title: 0.875rem;
 $font-size-paragraphs: 1rem;
 
-$font-family-titles: 'Quicksand';
-$font-family-paragraphs: Arial;
-$font-family-subheadings: 'Quicksand'
+$font-family-titles: "DM Sans";
+$font-family-paragraphs: "Sono";
+$font-family-subheadings: "DM Sans";

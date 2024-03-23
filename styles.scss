@@ -6,8 +6,12 @@
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+}
+
 section {
-  margin: 80px 30px;
+  margin: 20px 10px;
 }
 ///////////////////////////////////////////////////////////////////////
 
@@ -20,7 +24,6 @@ header {
     justify-content: space-between;
 
     .container__logo {
-      width: 50vw;
       display: flex;
       align-items: center;
 
@@ -28,6 +31,7 @@ header {
         font-size: $font-size-header;
         margin-left: 10px;
         font-family: $font-family-titles;
+        font-weight: 450;
       }
 
       img {
@@ -59,20 +63,29 @@ header {
 
 //////// Containers for ALL sections styling //////////////
 .container {
-  border: 2px solid greenyellow;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 40px;
+  margin-bottom: 100px;
 
   h2 {
-    font-family: $font-family-titles;
+    font-family: $font-family-subheadings;
     font-size: $font-size-subheadings;
+    font-weight: 550;
+    margin-bottom: 50px;
+    word-spacing: 6px;
+    letter-spacing: 2px;
   }
 
   /////////// Intro Container /////////////////////
   &--intro {
     text-align: left;
     background-color: $color-tertiary;
+    padding-bottom: 50px;
+    h2 {
+      margin-bottom: 0px;
+    }
   }
 
   /////////// Technical Skills Container ////////////////
@@ -89,11 +102,6 @@ header {
     }
   }
 
-  /////////// Projects Container ////////////////
-  &--projects {
-    padding: 10px;
-  }
-
   /////////// About Me Container ////////////////
   &--about-me {
     padding: 20px;
@@ -101,9 +109,9 @@ header {
 
   /////////// Footer (Contact) Container ////////////////
   &--contact {
-    border: 1px solid red;
     background-color: $color-footer;
     padding: 20px;
+    margin: 0;
 
     a {
       text-decoration: none;
@@ -114,7 +122,6 @@ header {
   /// Don't nest 'contact-logos' in 'contact' because it will inherit the
   /// 'flex-direction: row' property from its parent
   &--contact-logos {
-    border: 2px solid blue;
     flex-direction: row;
     padding: 10px;
     margin: 10px;
@@ -128,135 +135,155 @@ header {
 ///////////// INTRO LAYOUT ///////////////
 .container--intro {
   h1 {
-    padding-left: 15px;
+    padding-left: 40px;
+    padding-top: 40px;
     margin: 20px 0;
     text-align: left;
     color: $color-secondary;
     font-size: $font-size-intro-greeting;
     font-family: $font-family-paragraphs;
     font-weight: 400;
+
+      a {
+        color: $color-secondary;
+
+        &:hover {
+          text-decoration: underline;
+          color: orange;
+        }
+      }
   }
 
   h2 {
-    height: 10%;
-    padding-left: 15px;
+    padding-left: 40px;
     font-size: $font-size-intro-heading;
     font-family: $font-family-titles;
 
     .intro__line {
       position: absolute;
-      right: 120px;
-      top: 380px;
+      left: 50px;
+      top: 360px;
       z-index: 0;
       margin: -75px 0;
       height: 50px;
-      width: 55%;
+      width: 240px;
     }
 
     .intro__line-software {
       position: absolute;
-      right: 100px;
-      top: 460px;
+      left: 50px;
+      top: 445px;
       margin: -85px 0;
       height: 60px;
-      width: 60%;
+      width: 270px;
     }
   }
 
   .button--intro {
-    margin: 100px;
-    padding: 15px;
-    width: 90%;
+    margin: 60px;
+    padding: 20px;
+    width: 280px;
     height: 70px;
     border-radius: 5px;
     box-shadow: 2px 2px;
     background-color: $color-button;
     font-family: $font-family-paragraphs;
     font-size: $font-size-button-large;
-    font-weight: 400;
+    font-weight: 500;
+    letter-spacing: -1px;
+    word-spacing: -4px;
+
+      a {
+        color: $color-titles;
+      }
+
+      img {
+        margin-left: 8px;
+      }
+  }
+}
+
+//////// PROJECTS LAYOUT //////////////////
+.projects__card {
+  margin-bottom: 50px;
+  width: 350px;
+
+  .projects__img-container {
+    background-color: $color-primary;
+    padding: 50px 10px 0 20px;
 
     img {
-      margin: 0 5px;
-      width: 15px;
+      padding: 0;
+      margin-bottom: -10px;
+      max-width: 300px;
+    }
+  }
+
+  .projects__skill-title {
+    font-family: $font-family-titles;
+    font-size: $font-size-project-skill-title;
+    margin: 30px 0 5px;
+    color: darken($color-primary, 20%);
+    font-weight: 550;
+    letter-spacing: 1px;
+  }
+
+  .projects__work-title {
+    margin-bottom: 20px;
+    font-family: $font-family-titles;
+    font-size: $font-size-project-title;
+    font-weight: 450;
+  }
+
+  .projects__summary {
+    font-family: $font-family-paragraphs;
+    font-size: $font-size-paragraphs;
+    color: $color-secondary;
+  }
+
+  .projects__btn-code {
+    display: inline-flex;
+    width: 70px;
+    height: 20px;
+    margin: 30px 10px;
+    margin-left: 0;
+    background-color: $color-button-projects;
+    border: none;
+    font-size: $font-size-button-small;
+    font-family: $font-family-paragraphs;
+    font-weight: 450;
+
+    img {
+      width: 19px;
+      margin-left: 10px;
+    }
+  }
+
+  .projects__btn-preview {
+    display: inline-flex;
+    width: 90px;
+    height: 20px;
+    background-color: $color-button-projects;
+    border: none;
+    font-size: $font-size-button-small;
+    font-family: $font-family-paragraphs;
+    font-weight: 450;
+
+    img {
+      width: 19px;
+      margin-left: 10px;
     }
   }
 }
-//////// TECHNICAL SKILLS LAYOUT ////////
-
-//////// PROJECTS LAYOUT //////////////////
-  .projects__img {
-      background-color: $color-primary;
-      padding: 50px 10px 0 20px;
-      margin-top: 30px;
-
-      img {
-        width: 100%;
-        padding: 0;
-        margin-bottom: -10px;
-      }
-    }
-
-    .projects__skill-title {
-      font-family: $font-family-titles;
-      font-size: $font-size-project-skill-title;
-      margin: 30px 0 5px;
-      color: $color-primary;
-      font-weight: bold;
-    }
-
-    .projects__work-title {
-      margin-bottom: 20px;
-      font-family: $font-family-titles;
-      font-size: $font-size-project-title;
-    }
-
-    .projects__summary {
-      font-family: Arial;
-      font-size: $font-size-paragraphs;
-      color: $color-secondary;
-    }
-
-    .projects__btn-code {
-      display: inline-flex; 
-      width: 70px;
-      height: 20px;
-      margin: 30px 10px;
-      margin-left: 0;
-      background-color: $color-button-projects;
-      border: none;
-    
-
-      // TODO: Remember to remove grey background from buttons!
-    
-      img {
-        width: 15px;
-        margin-left: 10px;
-      }
-    }
-    
-    .projects__btn-preview {
-      display: inline-flex;
-      width: 90px;
-      height: 20px;
-      background-color: $color-button-projects;
-      border: none;
-      // TODO: Remember to remove grey background from buttons!
-    
-      img {
-        width: 15px;
-        margin-left: 10px;
-      }
-    }
-  
-
 ////////// ABOUT ME LAYOUT //////////////
 .about-me__img {
-  width: 90%;
+  width: 300px;
   margin: 20px;
   border-radius: 5px;
 }
 
 .about-me__summary {
+  margin-top: 30px;
   font-family: $font-family-paragraphs;
   font-size: $font-size-paragraphs;
   color: $color-secondary;
@@ -269,6 +296,22 @@ header {
   list-style-type: lower-alpha;
 }
 //////////// FOOTER LAYOUT /////////////
+.container--contact {
 
+  .contact__logo {
+    img {
+      margin: 0 5px;
+      width: 15px;
+    }
+  }
 
+  a {
+    font-family: $font-family-paragraphs;
+    letter-spacing: 1.5px;
 
+    &:hover {
+      text-decoration: underline;
+      color: rgb(203, 202, 202);
+    }
+  }
+}
