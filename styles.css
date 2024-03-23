@@ -7,6 +7,7 @@
 
 a {
   text-decoration: none;
+  color: black;
 }
 
 section {
@@ -34,7 +35,11 @@ header nav .container__logo img {
   width: 30px;
 }
 header nav #dropdown {
-  border: 1px solid rgb(40, 33, 33);
+  position: fixed;
+  right: 20px;
+  width: 20px;
+  opacity: 0.8;
+  border: none;
 }
 header nav .nav__menu {
   display: none;
@@ -43,7 +48,7 @@ header nav .nav__menu {
   list-style-type: none;
   border: 1px solid red;
 }
-header nav .button--nav {
+header nav .nav__get-in-touch {
   display: none;
   width: 100px;
 }
@@ -91,7 +96,6 @@ header nav .button--nav {
   margin: 0;
 }
 .container--contact a {
-  text-decoration: none;
   color: #fff;
 }
 .container--contact-logos {
@@ -142,24 +146,33 @@ header nav .button--nav {
   height: 60px;
   width: 270px;
 }
-.container--intro .button--intro {
+.container--intro .intro__projects-link {
   margin: 60px;
-  padding: 20px;
+  padding: 25px 20px;
   width: 280px;
   height: 70px;
   border-radius: 5px;
-  box-shadow: 2px 2px;
+  box-shadow: 3px 3px 2px;
   background-color: #bae8e8;
   font-family: "Sono";
   font-size: 1.125rem;
-  font-weight: 500;
+  font-weight: 450;
   letter-spacing: -1px;
   word-spacing: -4px;
 }
-.container--intro .button--intro a {
-  color: black;
+.container--intro .intro__projects-link:hover {
+  box-shadow: 2px 2px;
+  cursor: pointer;
 }
-.container--intro .button--intro img {
+.container--intro .intro__projects-link:active {
+  box-shadow: 1px 1px;
+  width: 240px;
+  height: 50px;
+  font-size: 99%;
+  padding-top: 16px;
+  padding-left: 16px;
+}
+.container--intro .intro__projects-link img {
   margin-left: 8px;
 }
 
@@ -195,7 +208,7 @@ header nav .button--nav {
   font-size: 1rem;
   color: #93a2b5;
 }
-.projects__card .projects__btn-code {
+.projects__card .projects__code-link {
   display: inline-flex;
   width: 70px;
   height: 20px;
@@ -207,11 +220,19 @@ header nav .button--nav {
   font-family: "Sono";
   font-weight: 450;
 }
-.projects__card .projects__btn-code img {
+.projects__card .projects__code-link:hover {
+  background-color: #95a3b6;
+  border-radius: 2px;
+  margin-left: 1px;
+}
+.projects__card .projects__code-link:visited {
+  color: purple;
+}
+.projects__card .projects__code-link img {
   width: 19px;
   margin-left: 10px;
 }
-.projects__card .projects__btn-preview {
+.projects__card .projects__preview-link {
   display: inline-flex;
   width: 90px;
   height: 20px;
@@ -221,7 +242,15 @@ header nav .button--nav {
   font-family: "Sono";
   font-weight: 450;
 }
-.projects__card .projects__btn-preview img {
+.projects__card .projects__preview-link:hover {
+  background-color: #95a3b6;
+  border-radius: 2px;
+  margin-left: 1px;
+}
+.projects__card .projects__preview-link:visited {
+  color: purple;
+}
+.projects__card .projects__preview-link img {
   width: 19px;
   margin-left: 10px;
 }
@@ -256,5 +285,5 @@ header nav .button--nav {
 }
 .container--contact a:hover {
   text-decoration: underline;
-  color: rgb(203, 202, 202);
+  color: #95a3b6;
 }/*# sourceMappingURL=styles.css.map */
