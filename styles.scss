@@ -12,16 +12,14 @@ a {
   color: $color-titles;
 }
 
-section {
-  margin: 20px 10px;
-}
 ///////////////////////////////////////////////////////////////////////
 
 // Header and Navigation styles
 header {
-  margin: 10px;
+  padding: 10px 40px;
 
   nav {
+    margin: 30px 0;
     display: flex;
     justify-content: space-between;
 
@@ -29,38 +27,71 @@ header {
       display: flex;
       align-items: center;
 
-      h1 {
+      .nav__name-tag {
         font-size: $font-size-header;
         margin-left: 10px;
         font-family: $font-family-titles;
-        font-weight: 450;
+        font-weight: 300;
+
+        .bold {
+          font-weight: 500;
+        }
       }
 
       img {
         width: 30px;
       }
     }
-    #dropdown {
-      position: fixed;
-      right: 20px;
-      width: 20px;
-      opacity: 0.8;
-      border: none;
-    }
 
     .nav__menu {
       display: none;
+      align-items: center;
       width: 30%;
-      // display: flex;
+      padding-left: 50%;
       justify-content: space-around;
       list-style-type: none;
-      border: 1px solid red;
+      font-size: $font-size-intro-greeting;
+
+      a {
+        padding: 20px;
+        font-family: $font-family-paragraphs;
+        color: $color-secondary;
+
+        &:hover {
+          text-decoration: underline;
+          color: orange;
+        }
+      }
     }
 
-    // TODO: Unhide during media queries
     .nav__get-in-touch {
       display: none;
-      width: 100px;
+      width: 150px;
+      margin: 0 60px;
+      padding: 10px 5px;
+      border-radius: 5px;
+      border: 1px solid black;
+      background-color: $color-intro-link;
+      font-family: $font-family-paragraphs;
+      font-size: $font-size-link-small;
+      font-weight: 450;
+      letter-spacing: -1px;
+      word-spacing: -4px;
+      text-align: center;
+
+      &:hover {
+        box-shadow: 2px 2px;
+        cursor: pointer;
+      }
+
+      &:active {
+        box-shadow: 0px 0px;
+        width: 140px;
+        height: 30px;
+        font-size: 85%;
+        padding-top: 7px;
+        padding-left: 5px;
+      }
     }
   }
 }
@@ -86,6 +117,7 @@ header {
 
   /////////// Intro Container /////////////////////
   &--intro {
+    margin: 0 20px;
     text-align: left;
     background-color: $color-tertiary;
     padding-bottom: 50px;
@@ -102,10 +134,6 @@ header {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     gap: 50px 30px;
-
-    h2 {
-      font-family: monospace; // Placeholder - change font
-    }
   }
 
   /////////// About Me Container ////////////////
@@ -140,7 +168,7 @@ header {
 ///////////// INTRO LAYOUT ///////////////
 .container--intro {
   h1 {
-    padding-left: 40px;
+    padding-left: 60px;
     padding-top: 40px;
     margin: 20px 0;
     text-align: left;
@@ -160,27 +188,29 @@ header {
   }
 
   h2 {
-    padding-left: 40px;
+    padding-left: 60px;
     font-size: $font-size-intro-heading;
     font-family: $font-family-titles;
 
     .intro__line {
       position: absolute;
-      left: 50px;
-      top: 360px;
-      z-index: 0;
-      margin: -75px 0;
-      height: 50px;
-      width: 240px;
-    }
 
-    .intro__line-software {
-      position: absolute;
-      left: 50px;
-      top: 445px;
-      margin: -85px 0;
-      height: 60px;
-      width: 270px;
+      &--software {
+        left: 80px;
+        top: 415px;
+        z-index: 0;
+        margin: -75px 0;
+        height: 50px;
+        width: 240px;
+      }
+
+      &--developer {
+        left: 80px;
+        top: 500px;
+        margin: -85px 0;
+        height: 60px;
+        width: 270px;
+      }
     }
   }
 
@@ -217,7 +247,16 @@ header {
     }
   }
 }
-
+//////// SKILLS LAYOUT //////////////////
+.container--skills {
+  p {
+    font-size: $font-size-paragraphs;
+    font-family: $font-family-paragraphs;
+    color: $color-secondary;
+    text-align: center;
+    width: 50%;
+  }
+}
 //////// PROJECTS LAYOUT //////////////////
 .projects__card {
   margin-bottom: 50px;
@@ -268,15 +307,12 @@ header {
     font-family: $font-family-paragraphs;
     font-weight: 450;
 
-      &:hover {
-        background-color: lighten($color-secondary, 0.5%);
-        border-radius: 2px;
-        margin-left: 1px;
-      }
-
-      &:visited {
-        color: $color-link-visited;
-      }
+    &:hover {
+      text-decoration: underline;
+      color: orange;
+      border-radius: 2px;
+      margin-left: 1px;
+    }
 
     img {
       width: 19px;
@@ -293,15 +329,12 @@ header {
     font-size: $font-size-link-small;
     font-family: $font-family-paragraphs;
     font-weight: 450;
-    
+
     &:hover {
-      background-color: lighten($color-secondary, 0.5%);
+      text-decoration: underline;
+      color: orange;
       border-radius: 2px;
       margin-left: 1px;
-    }  
-
-    &:visited {
-      color: $color-link-visited;
     }
 
     img {
@@ -322,16 +355,22 @@ header {
   font-family: $font-family-paragraphs;
   font-size: $font-size-paragraphs;
   color: $color-secondary;
+
+  a {
+    color: $color-secondary;
+
+    &:hover {
+      text-decoration: underline;
+      color: orange;
+    }
+  }
 }
 
-.about-me__skills-list {
-  font-family: $font-family-paragraphs;
-  font-size: $font-size-paragraphs;
-  color: $color-secondary;
-  list-style-type: lower-alpha;
-}
 //////////// FOOTER LAYOUT /////////////
 .container--contact {
+  .contact__get-in-touch {
+    margin-right: 25px;
+  }
   .contact__logo {
     img {
       margin: 0 5px;
@@ -347,5 +386,94 @@ header {
       text-decoration: underline;
       color: lighten($color-secondary, 0.5%);
     }
+  }
+
+  .contact__email-logo {
+    position: absolute;
+    margin: 1px 0;
+    margin-left: 10px;
+    width: 18px;
+  }
+}
+
+
+/////////////MEDIA QUERIES Desktop///////////////////////////////
+@media screen and (min-width: 1440px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  header {
+    nav {
+      .nav__name-tag {
+        font-size: 65px;
+      }
+
+      img {
+        display: none;
+      }
+
+      #dropdown {
+        display: none;
+      }
+
+      .nav__menu {
+        display: flex;
+      }
+      .nav__get-in-touch {
+        display: block;
+      }
+    }
+  }
+
+  .projects-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 30px;
+  }
+
+  .container--skills-grid {
+    display: flex;
+    flex-direction: row;
+  }
+  .container--intro {
+    .intro__line {
+      display: none;
+    }
+    h1,
+    h2 {
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 30px;
+    }
+
+    h2 {
+      font-size: 100px;
+    }
+  }
+
+  .container--about-me {
+    .img-and-summary {
+      display: flex;
+
+      img {
+        width: 400px;
+        height: auto;
+        margin: 0 20px;
+      }
+
+      p {
+        padding: 0 10px;
+      }
+    }
+  }
+
+  .container--contact {
+    flex-direction: row-reverse;
+    justify-content: space-between;
   }
 }

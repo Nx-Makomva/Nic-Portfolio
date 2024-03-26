@@ -16,18 +16,14 @@
             src="images/closing tags.png"
             alt="picture of opening and closing tags"
           />
-          <h1>Nic Makomva</h1>
+          <h1 class="nav__name-tag">
+            Nic <strong class="bold">Makomva</strong>
+          </h1>
         </div>
-        <select id="dropdown">
-          <option value="#">Home</option>
-          <option value="#about-me">About Me</option>
-          <option value="#projects">Projects</option>
-          <option value="#contact">Contact</option>
-        </select>
         <ul class="nav__menu">
-          <li><a href="">Home</a></li>
-          <li><a href=""></a>About</li>
-          <li><a href=""></a>Projects</li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#about-me">About</a></li>
+          <li><a href="#projects">Projects</a></li>
         </ul>
         <a class="nav__get-in-touch" href="#contact">Get in Touch</a>
       </nav>
@@ -43,13 +39,13 @@
             <h2>
               A Junior
               <img
-                class="intro__line"
+                class="intro__line intro__line--software"
                 src="images/line-short.png"
                 alt="decorative underline"
               />
               Software
               <img
-                class="intro__line-software"
+                class="intro__line intro__line--developer"
                 src="images/line-short.png"
                 alt="decorative underline"
               />
@@ -67,9 +63,14 @@
       </section>
 
       <!-- Technical skills section with grid container for all the skills -->
-      <section class="skills">
+      <section>
         <div class="container container--skills">
           <h2>Technical Skills</h2>
+          <p>
+            Proficient in JavaScript, HTML, CSS, and React, with a strong grasp
+            of software development principles and a passion for crafting
+            elegant and efficient code.
+          </p>
           <div class="container container--skills-grid">
             <img src="images/git.png" alt="Git logo" />
             <img src="images/html.png" alt="HTML5 logo" />
@@ -87,128 +88,194 @@
       <!-- My Projects section with 6 projects all on projects__cards -->
       <section id="projects">
         <div class="container container--projects">
-          <h2>My Projects</h2>
-          <div class="projects__card">
-            <div class="projects__img-container">
-              <img src="images/project-pic.png" alt="placeholder project pic" />
+          <h2 class="projects__header">My Projects</h2>
+          <div class="projects-grid">
+            <div class="projects__card">
+              <div class="projects__img-container">
+                <img
+                  src="images/project-pic.png"
+                  alt="placeholder project pic"
+                />
+              </div>
+              <h3 class="projects__skill-title">REACT</h3>
+              <h3 class="projects__work-title">Smart Home</h3>
+              <p class="projects__summary">
+                Revolutionizing SmartHome Automation with React.js for enhanced
+                homeowner convenience.
+              </p>
+              <a
+                class="projects__code-link"
+                href="coming_soon.html"
+                target="_blank"
+              >
+                Code
+                <img
+                  src="images/carbon_code.png"
+                  alt="opening and closing tags symbol" /></a
+              ><a
+                class="projects__preview-link"
+                href="coming_soon.html"
+                target="_blank"
+              >
+                Preview
+                <img src="images/clarity_eye-line.png" alt="eye symbol" />
+              </a>
             </div>
-            <h3 class="projects__skill-title">REACT</h3>
-            <h3 class="projects__work-title">Smart Home</h3>
-            <p class="projects__summary">
-              Revolutionizing SmartHome Automation with React.js for enhanced
-              homeowner convenience.
-            </p>
-            <a class="projects__code-link" href="coming_soon.html" target="_blank">
-              Code
-              <img
-                src="images/carbon_code.png"
-                alt="opening and closing tags symbol" /></a
-            ><a class="projects__preview-link" href="coming_soon.html" target="_blank">
-              Preview
-              <img src="images/clarity_eye-line.png" alt="eye symbol" />
-            </a>
-          </div>
-          <div class="projects__card">
-            <div class="projects__img-container">
-              <img src="images/project-pic.png" alt="placeholder project pic" />
+            <div id="scss-project" class="projects__card">
+              <div class="projects__img-container">
+                <img
+                  src="images/project-pic.png"
+                  alt="placeholder project pic"
+                />
+              </div>
+              <h3 class="projects__skill-title">HTML, SCSS</h3>
+              <h3 class="projects__work-title">Nic's Portfolio</h3>
+              <p class="projects__summary">
+                Creating Stunning Websites with HTML and SCSS for Engaging
+                Designs.
+              </p>
+              <a
+                class="projects__code-link"
+                href="https://github.com/Nx-Makomva/Nic-Portfolio/tree/main"
+                target="_blank"
+              >
+                Code
+                <img
+                  src="images/carbon_code.png"
+                  alt="opening and closing tags symbol" /></a
+              ><a
+                class="projects__preview-link"
+                href="coming_soon.html"
+                target="_blank"
+              >
+                Preview
+                <img src="images/clarity_eye-line.png" alt="eye symbol" />
+              </a>
             </div>
-            <h3 class="projects__skill-title">JAVA, SPRINGBOOT</h3>
-            <h3 class="projects__work-title">Modular Microservices</h3>
-            <p class="projects__summary">
-              Accelerating Web Development with Spring Boot for Rapid Solutions.
-            </p>
-            <a class="projects__code-link" href="coming_soon.html" target="_blank">
-              Code
-              <img
-                src="images/carbon_code.png"
-                alt="opening and closing tags symbol" /></a
-            ><a class="projects__preview-link" href="coming_soon.html" target="_blank">
-              Preview
-              <img src="images/clarity_eye-line.png" alt="eye symbol" />
-            </a>
-          </div>
-          <div class="projects__card">
-            <div class="projects__img-container">
-              <img src="images/project-pic.png" alt="placeholder project pic" />
+            <div class="projects__card">
+              <div class="projects__img-container">
+                <img
+                  src="images/project-pic.png"
+                  alt="placeholder project pic"
+                />
+              </div>
+              <h3 class="projects__skill-title">REACT</h3>
+              <h3 class="projects__work-title">React Interfaces</h3>
+              <p class="projects__summary">
+                Enhancing e-commerce with React.js, introducing seamless
+                checkout and personalized interactions for elevated
+                satisfaction.
+              </p>
+              <a
+                class="projects__code-link"
+                href="coming_soon.html"
+                target="_blank"
+              >
+                Code
+                <img
+                  src="images/carbon_code.png"
+                  alt="opening and closing tags symbol" /></a
+              ><a
+                class="projects__preview-link"
+                href="coming_soon.html"
+                target="_blank"
+              >
+                Preview
+                <img src="images/clarity_eye-line.png" alt="eye symbol" />
+              </a>
             </div>
-            <h3 class="projects__skill-title">REACT</h3>
-            <h3 class="projects__work-title">React Interfaces</h3>
-            <p class="projects__summary">
-              Enhancing e-commerce with React.js, introducing seamless checkout
-              and personalized interactions for elevated satisfaction.
-            </p>
-            <a class="projects__code-link" href="coming_soon.html" target="_blank">
-              Code
-              <img
-                src="images/carbon_code.png"
-                alt="opening and closing tags symbol" /></a
-            ><a class="projects__preview-link" href="coming_soon.html" target="_blank">
-              Preview
-              <img src="images/clarity_eye-line.png" alt="eye symbol" />
-            </a>
-          </div>
-          <div class="projects__card">
-            <div class="projects__img-container">
-              <img src="images/project-pic.png" alt="placeholder project pic" />
+            <div id="js-project" class="projects__card">
+              <div class="projects__img-container">
+                <img
+                  src="images/project-pic.png"
+                  alt="placeholder project pic"
+                />
+              </div>
+              <h3 class="projects__skill-title">JAVASCRIPT</h3>
+              <h3 class="projects__work-title">Interactive Web Apps</h3>
+              <p class="projects__summary">
+                Elevating User Experiences with JavaScript for Interactive
+                Applications.
+              </p>
+              <a
+                class="projects__code-link"
+                href="coming_soon.html"
+                target="_blank"
+              >
+                Code
+                <img
+                  src="images/carbon_code.png"
+                  alt="opening and closing tags symbol" /></a
+              ><a
+                class="projects__preview-link"
+                href="coming_soon.html"
+                target="_blank"
+              >
+                Preview
+                <img src="images/clarity_eye-line.png" alt="eye symbol" />
+              </a>
             </div>
-            <h3 class="projects__skill-title">JAVASCRIPT</h3>
-            <h3 class="projects__work-title">Interactive Web Apps</h3>
-            <p class="projects__summary">
-              Elevating User Experiences with JavaScript for Interactive
-              Applications.
-            </p>
-            <a class="projects__code-link" href="coming_soon.html" target="_blank">
-              Code
-              <img
-                src="images/carbon_code.png"
-                alt="opening and closing tags symbol" /></a
-            ><a class="projects__preview-link" href="coming_soon.html" target="_blank">
-              Preview
-              <img src="images/clarity_eye-line.png" alt="eye symbol" />
-            </a>
-          </div>
-          <div class="projects__card">
-            <div class="projects__img-container">
-              <img src="images/project-pic.png" alt="placeholder project pic" />
+            <div id="java-project" class="projects__card">
+              <div class="projects__img-container">
+                <img
+                  src="images/project-pic.png"
+                  alt="placeholder project pic"
+                />
+              </div>
+              <h3 class="projects__skill-title">JAVA, SPRINGBOOT</h3>
+              <h3 class="projects__work-title">Modular Microservices</h3>
+              <p class="projects__summary">
+                Accelerating Web Development with Spring Boot for Rapid
+                Solutions.
+              </p>
+              <a
+                class="projects__code-link"
+                href="coming_soon.html"
+                target="_blank"
+              >
+                Code
+                <img
+                  src="images/carbon_code.png"
+                  alt="opening and closing tags symbol" /></a
+              ><a
+                class="projects__preview-link"
+                href="coming_soon.html"
+                target="_blank"
+              >
+                Preview
+                <img src="images/clarity_eye-line.png" alt="eye symbol" />
+              </a>
             </div>
-            <h3 class="projects__skill-title">HTML, SCSS</h3>
-            <h3 class="projects__work-title">Nic's Portfolio</h3>
-            <p class="projects__summary">
-              Creating Stunning Websites with HTML and SCSS for Engaging
-              Designs.
-            </p>
-            <a
-              class="projects__code-link"
-              href="https://github.com/Nx-Makomva/Nic-Portfolio/tree/main"
-              target="_blank"
-            >
-              Code
-              <img
-                src="images/carbon_code.png"
-                alt="opening and closing tags symbol" /></a
-            ><a class="projects__preview-link" href="coming_soon.html" target="_blank">
-              Preview
-              <img src="images/clarity_eye-line.png" alt="eye symbol" />
-            </a>
-          </div>
-          <div class="projects__card">
-            <div class="projects__img-container">
-              <img src="images/project-pic.png" alt="placeholder project pic" />
+            <div class="projects__card">
+              <div class="projects__img-container">
+                <img
+                  src="images/project-pic.png"
+                  alt="placeholder project pic"
+                />
+              </div>
+              <h3 class="projects__skill-title">REACT, GIT</h3>
+              <h3 class="projects__work-title">Dynamic Interfaces</h3>
+              <p class="projects__summary">
+                Dynamic Web Interfaces & Version Control Mastery
+              </p>
+              <a
+                class="projects__code-link"
+                href="coming_soon.html"
+                target="_blank"
+              >
+                Code
+                <img
+                  src="images/carbon_code.png"
+                  alt="opening and closing tags symbol" /></a
+              ><a
+                class="projects__preview-link"
+                href="coming_soon.html"
+                target="_blank"
+              >
+                Preview
+                <img src="images/clarity_eye-line.png" alt="eye symbol" />
+              </a>
             </div>
-            <h3 class="projects__skill-title">REACT, GIT</h3>
-            <h3 class="projects__work-title">Dynamic Interfaces</h3>
-            <p class="projects__summary">
-              Dynamic Web Interfaces & Version Control Mastery
-            </p>
-            <a class="projects__code-link" href="coming_soon.html" target="_blank">
-              Code
-              <img
-                src="images/carbon_code.png"
-                alt="opening and closing tags symbol" /></a
-            ><a class="projects__preview-link" href="coming_soon.html" target="_blank">
-              Preview
-              <img src="images/clarity_eye-line.png" alt="eye symbol" />
-            </a>
           </div>
         </div>
       </section>
@@ -217,46 +284,49 @@
       <section>
         <div class="container container--about-me">
           <h2 id="about-me">About Me</h2>
-          <img
-            src="images/about-me-3.png"
-            alt="Picture of Nic, the developer"
-            class="about-me__img"
-            id="nic"
-          />
-          <p class="about-me__summary">
-            👋 Hi! I'm Nic, I've been a developer for about a year now and I'm
-            always challenging myself to build whatever complicated mess my
-            imagination comes up with.
-            <br />
-            <br />
-            I use code as a means of solving these problems and sometimes these
-            things keep me up at night. I don't know if it's a good thing or a
-            bad thing but I have a lot of fun programming the solutions,
-            especially things that push me out of my comfort zone... it's the
-            only way to grow, right? 🚀
-            <br />
-            <br />
-            Some skills I've developed:
-            <br />
-            <br />
-            Javascript <br />
-            C++ (Usual culprit that keeps me up) <br />
-            Java <br />
-            HTML & CSS
-            <br />
-            <br />
-            I also have a degree in Psychology which makes for an interesting
-            perspective when solving problems. I'm always thinking about how
-            people will feel interacting with the things I build.
-            <br />
-            <br />
-            Most of all, I like connecting with people and learning from others
-            so feel free to reach out to me, let's have a conversation
-            <br />
-            <br />
-            😁 P.S. I don't know if you can tell but I wrote this one all by
-            myself, ChatGPT said I sounded passionate ✨
-          </p>
+          <div class="img-and-summary">
+            <img
+              src="images/about-me-3.png"
+              alt="Picture of Nic, the developer"
+              class="about-me__img"
+              id="nic"
+            />
+            <p class="about-me__summary">
+              👋 Hi! I'm Nic, I've been a developer for about a year now and I'm
+              always challenging myself to build whatever complicated mess my
+              imagination comes up with.
+              <br />
+              <br />
+              I use code as a means of solving these problems and sometimes
+              these things keep me up at night. I don't know if it's a good
+              thing or a bad thing but I have a lot of fun programming the
+              solutions, especially things that push me out of my comfort
+              zone... it's the only way to grow, right? 🚀
+              <br />
+              <br />
+              Some skills I've developed:
+              <br />
+              <br />
+              <a href="#js-project">Javascript</a> <br />
+              <a href="coming_soon.html" target="_blank">C++</a> (Usual culprit
+              that keeps me up) <br />
+              <a href="#java-project">Java</a> <br />
+              <a href="#scss-project">HTML & SCSS</a>
+              <br />
+              <br />
+              I also have a degree in Psychology which makes for an interesting
+              perspective when solving problems. I'm always thinking about how
+              people will feel interacting with the things I build.
+              <br />
+              <br />
+              Most of all, I like connecting with people and learning from
+              others so feel free to reach out to me, let's have a conversation
+              <br />
+              <br />
+              😁 P.S. I don't know if you can tell but I wrote this one all by
+              myself, ChatGPT said I sounded passionate ✨
+            </p>
+          </div>
         </div>
       </section>
     </main>
@@ -287,7 +357,14 @@
             <img src="images/cv-logo.png" alt="cv logo" class="contact__logo"
           /></a>
         </div>
-        <a href="mailto:nicholasstm@gmail.com">Nicholasstm@gmail.com </a>
+        <a class="contact__get-in-touch" href="mailto:nicholasstm@gmail.com"
+          >GET IN TOUCH
+          <img
+            class="contact__email-logo"
+            src="/images/email-icon.png"
+            alt="send email icon"
+          />
+        </a>
       </div>
     </footer>
   </body>
