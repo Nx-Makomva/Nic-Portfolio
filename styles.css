@@ -327,6 +327,62 @@ header nav .nav__get-in-touch:active {
   width: 18px;
 }
 
+@media screen and (min-width: 1440px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  header nav .nav__name-tag {
+    font-size: 65px;
+  }
+  header nav img {
+    display: none;
+  }
+  header nav .nav__menu {
+    display: flex;
+  }
+  header nav .nav__get-in-touch {
+    display: block;
+  }
+  .projects-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 30px;
+  }
+  .container--skills-grid {
+    display: flex;
+    flex-direction: row;
+  }
+  .container--intro .intro__line {
+    display: none;
+  }
+  .container--intro h1,
+  .container--intro h2 {
+    text-align: center;
+  }
+  .container--intro h1 {
+    font-size: 30px;
+  }
+  .container--intro h2 {
+    font-size: 100px;
+  }
+  .container--about-me .img-and-summary {
+    display: flex;
+  }
+  .container--about-me .img-and-summary img {
+    width: 500px;
+    height: 400px;
+    margin: 35px 20px;
+  }
+  .container--about-me .img-and-summary p {
+    padding: 0 10px;
+  }
+  .container--contact {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+}
 @media screen and (min-width: 768px) {
   * {
     margin: 0;
@@ -378,62 +434,6 @@ header nav .nav__get-in-touch:active {
     width: 400px;
     height: 450px;
     margin: 36px 20px 0;
-  }
-  .container--about-me .img-and-summary p {
-    padding: 0 10px;
-  }
-  .container--contact {
-    flex-direction: row-reverse;
-    justify-content: space-between;
-  }
-}
-@media screen and (min-width: 1440px) {
-  * {
-    margin: 0;
-    padding: 0;
-  }
-  header nav .nav__name-tag {
-    font-size: 65px;
-  }
-  header nav img {
-    display: none;
-  }
-  header nav .nav__menu {
-    display: flex;
-  }
-  header nav .nav__get-in-touch {
-    display: block;
-  }
-  .projects-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 30px;
-  }
-  .container--skills-grid {
-    display: flex;
-    flex-direction: row;
-  }
-  .container--intro .intro__line {
-    display: none;
-  }
-  .container--intro h1,
-  .container--intro h2 {
-    text-align: center;
-  }
-  .container--intro h1 {
-    font-size: 30px;
-  }
-  .container--intro h2 {
-    font-size: 100px;
-  }
-  .container--about-me .img-and-summary {
-    display: flex;
-  }
-  .container--about-me .img-and-summary img {
-    width: 500px;
-    height: 400px;
-    margin: 35px 20px;
   }
   .container--about-me .img-and-summary p {
     padding: 0 10px;
