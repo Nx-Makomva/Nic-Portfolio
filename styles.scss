@@ -1,6 +1,7 @@
-@use "media-queries";
-@use "variables" as *;
-@use "layouts";
+
+@use "./variables" as *;
+@use "./layouts" as *;
+@use "./media-queries" as *;
 
 * {
   margin: 0;
@@ -8,24 +9,19 @@
   box-sizing: border-box;
 }
 
-
 a {
   text-decoration: none;
   color: $color-titles;
 }
 
-///////////////////////////////////////////////////////////////////////
-
-// Header and Navigation styles
+////////// Header and Navigation styles///////////
 header {
   padding: 10px 40px;
-  
 
   nav {
     margin: 30px 0;
     display: flex;
     justify-content: space-between;
-    
 
     .container__logo {
       display: flex;
@@ -37,9 +33,9 @@ header {
         font-family: $font-family-titles;
         font-weight: 300;
 
-          .bold {
-            font-weight: 500;
-          }
+        .bold {
+          font-weight: 500;
+        }
       }
 
       img {
@@ -56,16 +52,16 @@ header {
       list-style-type: none;
       font-size: $font-size-intro-greeting;
 
-        a {
-          padding: 20px; 
-          font-family: $font-family-paragraphs;
-          color: $color-secondary;
+      a {
+        padding: 20px;
+        font-family: $font-family-paragraphs;
+        color: $color-secondary;
 
-          &:hover {
-            text-decoration: underline;
-            color: orange;
-          }
+        &:hover {
+          text-decoration: underline;
+          color: orange;
         }
+      }
     }
 
     .nav__get-in-touch {
@@ -82,12 +78,12 @@ header {
       letter-spacing: -1px;
       word-spacing: -4px;
       text-align: center;
-  
+
       &:hover {
         box-shadow: 2px 2px;
         cursor: pointer;
       }
-  
+
       &:active {
         box-shadow: 0px 0px;
         width: 140px;
@@ -95,12 +91,10 @@ header {
         font-size: 85%;
         padding-top: 7px;
         padding-left: 5px;
-     }
+      }
     }
   }
 }
-
-////////////////////////////////////////////////////////////////////
 
 //////// Containers for ALL sections styling //////////////
 .container {
@@ -140,7 +134,6 @@ header {
     gap: 50px 30px;
   }
 
- 
   /////////// About Me Container ////////////////
   &--about-me {
     padding: 20px;
@@ -170,7 +163,6 @@ header {
   }
 }
 
-
 ///////////// INTRO LAYOUT ///////////////
 .container--intro {
   h1 {
@@ -198,12 +190,10 @@ header {
     font-size: $font-size-intro-heading;
     font-family: $font-family-titles;
 
-
     .intro__line {
       position: absolute;
-    
+
       &--software {
-      
         left: 80px;
         top: 420px;
         z-index: 0;
@@ -211,9 +201,8 @@ header {
         height: 50px;
         width: 240px;
       }
-    
+
       &--developer {
-   
         left: 80px;
         top: 500px;
         margin: -85px 0;
@@ -221,9 +210,6 @@ header {
         width: 270px;
       }
     }
-
-
-  
   }
 
   .intro__projects-link {
@@ -259,6 +245,7 @@ header {
     }
   }
 }
+
 //////// SKILLS LAYOUT //////////////////
 .container--skills {
   p {
@@ -269,6 +256,7 @@ header {
     width: 50%;
   }
 }
+
 //////// PROJECTS LAYOUT //////////////////
 .projects__card {
   margin-bottom: 50px;
@@ -324,7 +312,6 @@ header {
       color: orange;
       border-radius: 2px;
       margin-left: 1px;
-    
     }
 
     img {
@@ -356,6 +343,7 @@ header {
     }
   }
 }
+
 ////////// ABOUT ME LAYOUT //////////////
 .about-me__img {
   width: 300px;
@@ -371,11 +359,11 @@ header {
 
   a {
     color: $color-secondary;
-  
+
     &:hover {
       text-decoration: underline;
       color: orange;
-  }
+    }
   }
 }
 
@@ -401,102 +389,13 @@ header {
     }
   }
 
-.contact__email-logo {
-  position: absolute;
-  margin: 1px 0;
-  margin-left: 10px;
-  width: 18px;
-}
- 
-}
-
-
-
-
-
-/////////////MEDIA QUERIES Desktop///////////////////////////////
-@media screen and (min-width: 1440px) {
-  * {
-    margin: 0;
-    padding: 0;
-  }
-
-    header {
-      nav { 
-        .nav__name-tag {
-          font-size: 65px;
-     
-        }
-
-        img {
-          display: none;
-        }
-
-      
-        .nav__menu {
-          display: flex;
-        }
-        .nav__get-in-touch {
-          display: block;
-        }
-      }
-    }
-  
-  .projects-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 30px;
-  }
-
-  .container--skills-grid {
-    display: flex;
-    flex-direction: row;
-
-    
-  }
-  .container--intro {
-    .intro__line {
-      display: none;
-    }
-    h1,
-    h2 {
-      text-align: center;
-    }
-
-    h1 {
-      font-size: 30px;
-    }
-
-    h2 {
-      font-size: 100px;
-    }
-  }
-
-  .container--about-me {
-    .img-and-summary {
-      display: flex;
-
-      img {
-        width: 500px;
-        height: 400px;
-        margin: 35px 20px;
-      }
-
-      p {
-        padding: 0 10px;
-      }
-    }
-  }
-
-  .container--contact {
-    flex-direction: row-reverse;
-    justify-content: space-between;
+  .contact__email-logo {
+    position: absolute;
+    margin: 1px 0;
+    margin-left: 10px;
+    width: 18px;
   }
 }
-
-
-
 
 
 /////////////MEDIA QUERIES IPAD ///////////////////////////////
@@ -506,30 +405,29 @@ header {
     padding: 0;
   }
 
-    header {
-      nav { 
-        .nav__name-tag {
-          font-size: 65px;
-     
-        }
+  header {
+    nav {
+      .nav__name-tag {
+        font-size: 65px;
+      }
 
-        img {
-          display: none;
-        }
-      
-        .nav__menu {
-          display: flex;
-          padding: 0;
-          margin-left: auto;
-          margin-right: 30px;
-        }
-        .nav__get-in-touch {
-          display: block;
-          margin: 0;
-        }
+      img {
+        display: none;
+      }
+
+      .nav__menu {
+        display: flex;
+        padding: 0;
+        margin-left: auto;
+        margin-right: 30px;
+      }
+      .nav__get-in-touch {
+        display: block;
+        margin: 0;
       }
     }
-  
+  }
+
   .projects-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -540,8 +438,6 @@ header {
   .container--skills-grid {
     display: flex;
     flex-direction: row;
-
-    
   }
   .container--intro {
     .intro__line {
@@ -583,6 +479,79 @@ header {
   }
 }
 
+/////////////MEDIA QUERIES Desktop///////////////////////////////
+@media screen and (min-width: 1440px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
 
+  header {
+    nav {
+      .nav__name-tag {
+        font-size: 65px;
+      }
 
+      img {
+        display: none;
+      }
 
+      .nav__menu {
+        display: flex;
+      }
+      .nav__get-in-touch {
+        display: block;
+      }
+    }
+  }
+
+  .projects-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 30px;
+  }
+
+  .container--skills-grid {
+    display: flex;
+    flex-direction: row;
+  }
+  .container--intro {
+    .intro__line {
+      display: none;
+    }
+    h1,
+    h2 {
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 30px;
+    }
+
+    h2 {
+      font-size: 100px;
+    }
+  }
+
+  .container--about-me {
+    .img-and-summary {
+      display: flex;
+
+      img {
+        width: 500px;
+        height: 400px;
+        margin: 35px 20px;
+      }
+
+      p {
+        padding: 0 10px;
+      }
+    }
+  }
+
+  .container--contact {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+}
