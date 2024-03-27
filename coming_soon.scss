@@ -39,11 +39,16 @@ p {
 }
 
 a {
-  text-decoration: none;
+  text-decoration: underline;
   color: white;
+  padding: 5px;
 
     &:hover {
       text-decoration: underline;
-      color: rgba(255, 166, 0, 0.737);
+      background-color: #fff;
+      padding: 5px;
+      border-radius: 2px;
+      color: #76CAC6;
+   
     }
 }

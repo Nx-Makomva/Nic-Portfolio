@@ -159,7 +159,7 @@ header nav .nav__get-in-touch:active {
 }
 .container--intro h2 .intro__line--software {
   left: 80px;
-  top: 415px;
+  top: 420px;
   z-index: 0;
   margin: -75px 0;
   height: 50px;
@@ -306,7 +306,7 @@ header nav .nav__get-in-touch:active {
 }
 
 .container--contact .contact__get-in-touch {
-  margin-right: 25px;
+  margin-right: 15px;
 }
 .container--contact .contact__logo img {
   margin: 0 5px;
@@ -376,7 +376,8 @@ header nav .nav__get-in-touch:active {
   }
   .container--about-me .img-and-summary img {
     width: 400px;
-    margin: 0 20px;
+    height: 450px;
+    margin: 36px 20px 0;
   }
   .container--about-me .img-and-summary p {
     padding: 0 10px;
@@ -395,9 +396,6 @@ header nav .nav__get-in-touch:active {
     font-size: 65px;
   }
   header nav img {
-    display: none;
-  }
-  header nav #dropdown {
     display: none;
   }
   header nav .nav__menu {
@@ -433,9 +431,9 @@ header nav .nav__get-in-touch:active {
     display: flex;
   }
   .container--about-me .img-and-summary img {
-    width: 400px;
-    height: auto;
-    margin: 0 20px;
+    width: 500px;
+    height: 400px;
+    margin: 35px 20px;
   }
   .container--about-me .img-and-summary p {
     padding: 0 10px;
